@@ -8,8 +8,6 @@ on: [push, pull_request]
 jobs:
   build:
     runs-on: ubuntu-latest
-    env:
-      REPO_DIR: repo
     steps:
     - uses: actions/checkout@v2
     - name: Set up Python
