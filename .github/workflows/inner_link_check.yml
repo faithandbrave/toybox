@@ -9,7 +9,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
     - name: Set up Python
       uses: actions/setup-python@v1
       with:
@@ -19,7 +18,5 @@ jobs:
         python -m pip install --upgrade pip
         pip install requests
     - uses: actions/checkout@v2
-      with:
-        path: ${{ env.REPO_DIR }}
     - name: check
       run: python3 .github/workflows/script/link_check.py --check-inner-link
