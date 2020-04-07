@@ -57,6 +57,7 @@ if __name__ == '__main__':
 
     if not args.check_inner_link and not args.check_outer_link:
         print("unchecked", file=sys.stderr)
+        sys.exit(1)
 
     found_error = False
     current_dir = os.getcwd()
