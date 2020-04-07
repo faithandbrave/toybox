@@ -1,5 +1,5 @@
 # page_a
-- [page_b](page_b.md.nolink)
+- [page_b](page_b.md)
 - [page_c](page_c.md.nolink)
 - [outside_page_a](http://そんなページはないA)
 - [LLVM Bug](https://llvm.org/bugs/show_bug.cgi?id=16654)
