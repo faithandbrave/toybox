@@ -9,6 +9,7 @@ fi
 if [ "$(wc -l < "$1")" -eq 0 ]; then
     exit 0
 fi
+result=cat "$1"
 curl --request POST \
     --url "https://api.github.com/repos/$3/issues" \
     --header "authorization: Bearer $2" \
@@ -16,6 +17,6 @@ curl --request POST \
     -d @- << EOF 
 {
     "title": "outer link check failed at $4",
-    "body": "The commit hash was: _$4_.\n\n$(cat "$1")"
+    "body": "The commit hash was: _$4_.\n\n$(result)"
 }
 EOF
