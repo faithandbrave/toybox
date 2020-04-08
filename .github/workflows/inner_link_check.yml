@@ -16,16 +16,8 @@ jobs:
         pip install requests
     - uses: actions/checkout@v2
     - name: check
-      run: |
-        OUT=$(python3 .github/workflows/script/link_check.py --check-inner-link 2>&1)
-        if [$? -ne 0]; then
-            curl --request POST \
-            --url https://api.github.com/repos/${{ github.repository }}/issues \
-            --header 'authorization: Bearer ${{ secrets.GITHUB_TOKEN }}' \
-            --header 'content-type: application/json' \
-            --data '{
-              "title": "failed link check: ${{ github.sha }}",
-              "body": "${{OUT}}"
-              }'
-            exit 1
-        fi
+      run: python3 .github/workflows/script/link_check.py --check-inner-link 2>&1 check_result.txt
+    - name: print check check_result
+      run: cat check_result.txt
+    - name: create github issue when needed
+      run: .github/workflows/script/create_github_issue_when_not_empty.sh check_result.txt ${{ secrets.GITHUB_TOKEN }} ${{ github.repository }} ${{ github.sha }}
