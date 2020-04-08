@@ -16,7 +16,7 @@ jobs:
         pip install requests
     - uses: actions/checkout@v2
     - name: check
-      run: python3 .github/workflows/script/link_check.py --check-inner-link 2>&1 check_result.txt
+      run: python3 .github/workflows/script/link_check.py --check-inner-link 2>&1 > check_result.txt
     - name: print check check_result
       run: cat check_result.txt
     - name: create github issue when needed
