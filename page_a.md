@@ -11,7 +11,7 @@
 
 ```cpp
 ```
-* page_d[link page_d.md.nolink]
+* page_d[link page_d.md]
 * page_e[link page_e.md.nolink]
 - outside_page_b[link http://not_found_page_b]
 
