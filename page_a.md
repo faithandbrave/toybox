@@ -1,7 +1,7 @@
 # page_a
-- [page_b](page_b.md)
+- [page_b](page_b.md.nolink)
 - [page_c](page_c.md.nolink)
-- outside_page_a http://そんなページはないA
+- [outside_page_a](http://そんなページはないA)
 - [LLVM Bug](https://llvm.org/bugs/show_bug.cgi?id=16654)
 - [協定世界時](https://ja.wikipedia.org/wiki/協定世界時)
 - [yohhoyブログ](http://d.hatena.ne.jp/yohhoy/20120623/p1 )
@@ -15,7 +15,7 @@
 
 ```cpp
 ```
-* page_d[link page_d.md]
+* page_d[link page_d.md.nolink]
 * page_e[link page_e.md.nolink]
 - outside_page_b[http://not_found_page_b]
 
