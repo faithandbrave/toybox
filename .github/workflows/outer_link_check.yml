@@ -1,6 +1,12 @@
 name: outer link check
 
-on: [push, pull_request]
+on:
+  push:
+  pull_request:
+  schedule:
+    # UTC 表記
+    # 日本時間 23:30
+    - cron: "30 14 * * *"
 
 jobs:
   build:
