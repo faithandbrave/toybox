@@ -9,7 +9,8 @@
 - [timsong](https://timsong-cpp.github.io/cppwp/n4659/)
 - [nasal-demons](http://www.catb.org/jargon/html/N/nasal-demons.html)
 - [StrategizedLocking](https://wiki.hsr.ch/PnProg/files/StrategizedLocking.pdf)
-- [node244](http://cmd.inp.nsk.su/old/cmd2/manuals/cernlib/shortwrups/node244.html)
+- node244 http://cmd.inp.nsk.su/old/cmd2/manuals/cernlib/shortwrups/node244.html
+- [node244 archive](https://web.archive.org/web/20190922154624/http://cmd.inp.nsk.su/old/cmd2/manuals/cernlib/shortwrups/node244.html)
 - [copy_elision](https://ja.cppreference.com/w/cpp/language/copy_elision)
 - [valarray](https://www.xlsoft.com/jp/products/intel/compilers/ccw/12/ug/cref_cls/common/cppref_valarray_use.htm)
 
