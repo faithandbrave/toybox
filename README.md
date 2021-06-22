@@ -1,2 +1,2 @@
 # toybox
-<TRIGGER.md>
+[TRIGGER.md](TRIGGER.md)
